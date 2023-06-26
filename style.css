@@ -1,8 +1,59 @@
-:root {
-    --background-color: red;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sora', sans-serif;
+}
+:root{
+    --font-color-white:#FFFFFF; 
+    --font-color-grey:#919193; 
+}
+body{
+    background: url('images/background.jpg');
+    background-size: cover;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    padding: 30px 20px;
 }
 
-h1{
-    font-size: 40px;
-    color: var(--background-color);
+/* Header */
+.profile-pic{
+    width: 130px;
+    background: linear-gradient(to right, #5578BA, #40A376);
+    border-radius: 50%;
+    margin: 16px 0;
 }
+.profile-name{
+    font-size: 1.5em;
+    color: var(--font-color-white);
+}
+.profile-bio{
+    font-size: 0.9em;
+    color: var(--font-color-grey);
+    margin: 8px 0 8px;
+}
+
+/* Main content */
+.social-link{
+    color: var(--font-color-white);
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 26px 0 20px;
+}
+.list-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 36px;
+    background: linear-gradient(to right, #5578BA, #40A376);
+    border-radius: 30px;
+}
+.social-logo{
+    width: 20px;
+}
+
+/* Footer */
